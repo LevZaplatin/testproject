@@ -18,8 +18,8 @@ from django.urls import include, path
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    url(r'^login/$', auth_views.login, name='login'),
-    url(r'^logout/$', auth_views.logout, name='logout'),
+    path(r'^login/$', auth_views.login, name='login'),
+    path(r'^logout/$', auth_views.logout, name='logout'),
     path('admin/', admin.site.urls),
     path('', include('news.urls'))
 ]
