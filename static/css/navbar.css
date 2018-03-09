@@ -4,6 +4,15 @@
   border-color:transparent;
   box-shadow:none;
 }
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+    vertical-align: top;
+}
 a{
   color:white;
 }
