@@ -21,5 +21,5 @@ urlpatterns = [
     path('login/', auth_views.login, name='login'),
     path('logout/', auth_views.logout, name='logout'),
     path('admin/', admin.site.urls),
-    path('^/', include('mainApp.urls'))
+    path('^$', include('mainApp.urls'))
 ]
