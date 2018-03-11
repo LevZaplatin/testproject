@@ -8,7 +8,7 @@ def index(request):
     html = ''
     for article in all_articles:
         url = '/news/' + str(article.id) + '/'
-        html += '<a href="' + url + '">' + article.article_title + '<a></br>'
+        html += '<a href="' + url + '">' + article.title + '<a></br>'
     return HttpResponse(http)
 
 def detail(request, article_id):
