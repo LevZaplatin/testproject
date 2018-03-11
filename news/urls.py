@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    re_path(r^'(?P<article_id>[0-9]+)/$', views.detail, name='detail'),
+    re_path(r'^(?P<article_id>[0-9]+)/$', views.detail, name='detail'),
 ]
 
