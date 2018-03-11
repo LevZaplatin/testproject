@@ -9,7 +9,7 @@ def index(request):
     for article in all_articles:
         url = '/news/' + str(article.id) + '/'
         html += '<a href="' + url + '">' + article.title + '<a></br>'
-    return HttpResponse(http)
+    return HttpResponse(html)
 
 def detail(request, article_id):
     return HttpResponse("<h1>This will be a detailed of article id: " + str(article_id) + "</h1>" )
