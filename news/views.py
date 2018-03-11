@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import article
+from .models import Article
 
 # Create your views here.
 def index(request):
-    all_articles = article.Objects.All()
+    all_articles = Article.Objects.All()
     html = ''
     for article in all_articles:
-        url = '/news/' + srt(article.id) + '/'
+        url = '/news/' + str(article.id) + '/'
         html += '<a href="' + url + '">' + article.article_title + '<a></br>'
     return HttpResponse(http)
 
