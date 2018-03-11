@@ -4,7 +4,7 @@ from .models import Article
 
 # Create your views here.
 def index(request):
-    all_articles = Article.Objects.All()
+    all_articles = Article.objects.all()
     html = ''
     for article in all_articles:
         url = '/news/' + str(article.id) + '/'
